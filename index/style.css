@@ -1,0 +1,87 @@
+.demo{
+  display: block;
+color: black;
+font-size: 3em;
+background-color: chartreuse;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.icon-bar{
+  width: 90px;
+  background-color: #555;
+}
+.icon-bar a{
+display: block;
+color: white;
+padding: 14px;
+text-align: center;
+font-size: 36px;
+
+}
+.icon-bar a:hover{
+  background-color: #111;
+}
+.active{
+  background-color: tomato;
+}
+
+
+
+/*menu icon*/
+
+.container{
+  display: block;
+}
+
+
+
+.bar1,.bar2,.bar3{
+  width: 35px;
+  height: 2px;
+  background-color: black;
+ margin: 6px 0;
+
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*according*/
+.container{
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  color:black;
+  background-color: #eee;
+  border: none;
+  outline: none;
+}
+.active.container:hover{
+  background-color: #ccc;
+}
+.panel{
+display: none;
+overflow: hidden;
+background-color: blanchedalmond;
+}
+.container:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
